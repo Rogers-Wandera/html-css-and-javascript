@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <!-- <style>
+        body {
+            background-color: #f7fafc;
+        }
+        .columns {
+            width: 20%;
+            border: solid 0.5px ccc;
+            background-color: white;
+            margin: 0 5rem;
+            /* display: flex;  */
+        }
+
+        .columns > div {
+            /* border: solid 1px #ccc; */
+            width: auto;
+            height: auto;
+            margin: 0 1rem;
+            padding-top: 1px;
+        }
+
+        .columns > div:nth-of-type(2) {
+            height: auto;
+            /* text-align: center; */
+        }
+        .columns > div:nth-of-type(2) > select {
+            padding: 10px;
+            margin: 0.1rem 0;
+        }
+
+        .columns > div:nth-of-type(3) {
+            height: auto;
+            /* text-align: center; */
+        }
+        .columns > div:nth-of-type(3) > select {
+            padding: 10px;
+            margin: 0.1rem 0;
+        }
+
+        .columns > div:nth-of-type(4) {
+            height: auto;
+            /* text-align: center; */
+        }
+        .columns > div:nth-of-type(4) > input {
+            padding: 10px;
+            margin: 0.1rem 0;
+        }
+
+        .columns > div:nth-of-type(5)  {
+            height: auto;
+            /* display: flex; */
+            /* text-align: center; */
+        }
+        .columns > div:nth-of-type(5) > div:nth-of-type(1)  {
+            display: flex;
+        }
+        .black {
+            width: 10%;
+            margin: 0.5rem 0;
+            height: 30px;
+            background-color: black;
+            border: 0.1px solid black;
+            border-radius: 45%;
+        }
+        .blue {
+            width: 10%;
+            margin: 0.5rem 0 0 0.5rem;
+            height: 30px;
+            background-color: blue;
+            border: 0.1px solid black;
+            border-radius: 45%;
+        }
+        .white {
+            width: 10%;
+            margin: 0.5rem 0 0 0.5rem;
+            height: 30px;
+            background-color: #fff;
+            border: 0.1px solid black;
+            border-radius: 45%;
+        }
+        .green {
+            width: 10%;
+            margin: 0.5rem 0 0 0.5rem;
+            height: 30px;
+            background-color: green;
+            border: 0.1px solid black;
+            border-radius: 45%;
+        }
+
+        .columns > div:nth-of-type(5) > div:nth-of-type(2) > input {
+            margin: 0 0 0.8rem 0;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:600px) {
+            .columns {
+                display: none;
+            }
+        } -->
+    <!-- </style> -->
+</head>
+<body>
+    <!-- <<div class="columns">
+        <div>
+             <h3>Great Discounts</h3>
+            <p>Use the following promo codes to get amazing discounts</p> -->
+        <!-- </div>
+        <div>
+            <h4>Filter Brands</h4>
+            <select name="Brand" id="Brand" style="width: 80%;">
+                <option value="">Fashion</option>
+                <option value="">Gucci</option>
+                <option value="">Louis Vuiton</option>
+            </select>
+        </div>
+        <div>
+            <h4>Filter By Size</h4>
+            <select name="Brand" id="Brand" style="width: 80%;">
+                <option value="">sm</option>
+                <option value="">md</option>
+                <option value="">lg</option>
+            </select>
+        </div>
+        <div>
+            <h4>Filter by name</h4>
+            <input type="text" name="name" placeholder="search by name">
+        </div>
+        <div>
+            <h4>Filter By Colour</h4>
+            <p>Trending</p>
+            <div>
+                <div class="black"></div>
+                <div class="blue"></div>
+                <div class="white"></div>
+                <div class="green"></div>
+            </div>
+            <div>
+                <h5>Search Colour</h5>
+                <input type="text" placeholder="search colour">
+            </div>
+        </div>
+    </div> --> 
+</body>
+
+<script>
+    var rank = "Comander";
+
+    var date = new Date().getDay()
+    console.log(date)
+
+    switch (date) {
+        case 0:
+            console.log("sunday")
+            break;
+        case 1:
+            console.log("Monday")
+            break;
+        case 2:
+            console.log("Tuesday")
+            break;
+        case 3:
+            console.log("Wednesday")
+        case 4:
+            console.log("Thursday")
+            break;
+        case 5: 
+        console.log("Friday")
+            break;
+        case 6:
+            console.log("Saturady")
+            break;
+        default:
+            console.log("Its a weekend ")
+            break;
+    }
+
+    if (date === 0) {
+        console.log("Sunday")
+    } else if (date === 1) {
+        console.log("Monday")
+    }else if (date === 2) {
+        console.log("Tuesday")
+    }else if (date === 3) {
+        console.log("Wednesday")
+    }else if (date === 4) {
+        console.log("Thursday")
+    }else if (date === 5) {
+        console.log("Friday")
+    } else {
+        console.log("Saturday")
+    }
+
+   switch (rank) {
+       case "Private":
+       case "Sergent":
+            console.log("Your not authorized to view this")
+            break;
+        case "Captain":
+            console.log("Captain what can i do for you")
+            break;
+        case "Commander":
+            console.log("Hello Commander what can i do for you")
+            break;
+       default:
+            console.log("Hey i dont know your rank")
+            break;
+   }
+
+   var cars = ["BMW" , "Harrier" , "Toyota"]
+
+   for (i = 0 ; i < cars.length ; i++) {
+       i[cars]
+       console.log(i + cars[i])
+   }
+
+   var myNumber = [ 0, 1 , 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9];
+
+   for (i = 0 ; i < myNumber.length ; i++) {
+      if ( i % 2 === 0) {
+          console.log(i + "even")
+      } else {
+          console.log(i + "odd")
+      }
+   }
+</script>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background-color: lightblue;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            /* min-height: 5rem; */
+        }
+
+        .header-nav {
+            background-color: lightblue;
+        }
+
+        .nav-ul {
+            list-style-type: none;
+            float: right;
+        }
+
+        .nav-ul > li {
+            display: inline;
+            margin: 5px;
+        }
+
+        .nav-ul > li > a {
+            text-decoration: none;
+            color: black;
+        }
+        .btn-btn {
+            background-color: lime;
+            border: 0;
+            padding: 6px;
+            color: white;
+        }
+        .logo {
+            width: 5%;
+            margin: 0 0 0 10px;
+        }
+
+        .drop-down-menu {
+            position: absolute;
+            background-color: grey;
+            opacity: 90%;
+            width: 10%;
+            left: 90%;
+            top: 10%;
+            display: none;
+        }
+        .drop-down-menu > ul {
+            list-style-type: none;
+        }
+
+        .drop-down-menu > ul > li {
+            margin: 0.4rem 0;
+        }
+
+        .header:hover .drop-down-menu {
+            display: block;
+        }
+        .dropdown {
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            padding: 14px 16px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            left: 89%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }  
+    </style>
+</head>
+<body>
+    <section>
+        <!-- Nav bar -->
+
+        <header class="header">
+            <nav class="header-nav">
+                <img src="./images/logo.png" alt="logo" class="logo">
+                <ul class="nav-ul">
+                    <li><a href="">Gabby</a></li>
+                    <li><a href="">Powell</a></li>
+                    <li><a href="">Ruth</a></li>
+                    <li><a href="">Allan</a></li>
+                    <li><a href="">Fauzan</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Dropdown 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- <section>
+            <div class="drop-down-menu" id="drop">
+                <ul>
+                    <li>Allan</li>
+                    <li>Powell</li>
+                    <li>Ruth</li>
+                </ul>
+            </div>
+        </section> -->
+
+          
+    </section>
+</body>
+</html>
